@@ -1,0 +1,220 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+header {
+  padding: 1rem 0;
+}
+header .logo {
+  height: 25px;
+}
+header nav {
+  gap: 1rem;
+}
+header .search {
+  gap: 1rem;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header nav a {
+  transition: 0.3s;
+  display: inline-block;
+}
+header nav a:hover {
+  color: red;
+  transform: scale(1.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+header .bell:hover{
+color: red;
+}
+header .profile:hover{
+  color:red;
+}
+
+.my-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content {
+  border: 1px solid black;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.hero-content a {
+  font-size: 1rem;
+  background: red;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 0.3rem;
+  transition: 0.3s;
+  width: 15%;
+  margin-top: 0.3rem;
+}
+.hero-content a:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.movies .item {
+  width: 32%;
+  border: 1px solid black;
+  background: white;
+}
+section .movie-header a:hover {
+  color: red;
+}
+.stars i {
+  color: red;
+}
+.item-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+.item h3 {
+  margin-bottom: 0.5rem;
+}
+.item-detail {
+  font-size: 0.8rem;
+}
+.item-detail :first-child {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 0.2rem;
+  margin-right:0.7rem ;
+}
+.item-content a {
+  font-size: 0.8rem;
+  background: red;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  width: 30%;
+  margin-top: 0.5rem;
+}
+.item-content a:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+.movie-header h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.movie-header a {
+  font-size: 0.8rem;
+  color: gray;
+}
+footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.my-flex2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .social img {
+  width: 2rem;
+}
+footer .apps img {
+  width: 5rem;
+}
+footer .term {
+  width: 70%;
+  font-size: 0.7rem;
+  
+}
+footer h4 {
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+footer .term a {
+  margin-right: 0.7rem;
+  transition: 0.4s;
+}
+footer .term a:hover {
+  color: red;
+}
+footer nav {
+  margin-top: 0;
+}
+.hero-content ul li {
+  list-style-type: none;
+  text-align: left;
+}
+.hero-content ul li span {
+  color: red;
+}
+main .movie-info .bord {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.movie-info ul {
+  padding: 0;
+  margin: 10px 0;
+  gap: 10px;
+}
+@media(max-width:650px){
+  header{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  header .search{
+    order: 2;
+  }
+  header nav{
+    order: 3;
+    margin: 0 auto;
+  }
+  #wrapper{
+    padding: 0 1rem;
+  }
+  .hero-content{
+    font-size: 0.8rem;
+  }
+  .hero-content a{
+    font-size: 0.7rem;
+  }
+  .movies{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .movies .item{
+    width: 100%;
+  }
+  footer{
+    flex-direction: column;
+  }
+  footer .item{
+    width: 100%;
+  }
+  footer .apps-logo{
+    justify-content: flex-start;
+  }
+  .item-content a{
+    width: 15%;
+  }
+
+}
